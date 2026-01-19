@@ -1,0 +1,44 @@
+
+.p{
+    font-size: 2em;
+}
+
+.bt{
+    padding: 14px 30px;
+    background-color: #726c62;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3;}
+ .bt:hover{
+background: #000;
+        }
+        .heading{
+margin-top: 20px;
+        }
+        .description{
+            margin-bottom: 20px;
+        }
+
+.specs {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.specs li {
+    padding: 6px 0;
+    color: #444;
+
+}
+
+
+.im{
+    padding-left: 100px;
+}
+.imgs{
+    padding-left: 30%;
+}
+span{
+    color: rgba(160, 4, 160, 0.927);
+}

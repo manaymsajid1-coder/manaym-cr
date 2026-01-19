@@ -1,0 +1,19 @@
+.images:hover{
+    transform: scale(1.05);
+
+  
+}
+.images{
+     box-shadow: -12px -10px 24px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: -12px -10px 24px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -12px -10px 24px -7px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+.para{
+    transition: all 0.5s;
+}
+.para:hover{
+    color: #0c0a0a;
+transform: scale(1.05);
+}

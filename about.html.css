@@ -1,0 +1,994 @@
+
+.banner video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.about{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 50px;
+}
+.right{*{
+margin: 0%;
+padding: 0%;
+list-style: none;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+list-style: none;
+
+
+}
+header{
+background:linear-gradient(purple,rgb(222, 184, 184));
+width: 100%;
+height:100px;
+text-align: center;
+justify-content:space-between;
+display: flex;
+
+
+
+}
+
+
+body{
+ overflow-x: hidden;
+}
+header ul{
+    display: flex;
+    padding: 10px;
+    gap: 25px;
+  
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+
+    
+
+}
+a:hover{
+     color: #161415;
+
+}
+header ul li a:hover::after{
+    content: '';
+display: block;
+    width: 100%;
+    height: 2px;
+    transform: scale(1.5s);
+    background-color: rgb(13, 13, 13);
+    margin-top: 5px;
+    transition-duration: 1.5s;
+}
+
+.logo{
+display: flex;
+
+ 
+
+}
+.logo h5{
+text-transform: capitalize;
+padding-left: 20px;
+font-size: 1.5em;
+color: white;
+
+}
+
+   
+.logo1 img{
+   height: 200px;
+   padding-top: 10px;
+   
+}
+
+.logo h5:hover{
+    color: #0c0a0a;
+
+}   
+.banner video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+/* =======================
+   RESPONSIVE MEDIA QUERIES
+   ======================= */
+
+/* Tablet view */
+@media (max-width: 992px) {
+
+    header{
+        height: auto;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+    }
+
+    header ul{
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    header ul li a{
+        font-size: 0.9em;
+    }
+
+    .logo h5{
+        font-size: 1.3em;
+    }
+
+    .logo1 img{
+        height: 150px;
+    }
+
+    .banner video{
+        height: 70vh;
+    }
+}
+
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo{
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    header ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header ul li a{
+        font-size: 0.85em;
+    }
+
+    .logo h5{
+        font-size: 1.2em;
+        padding-left: 0;
+    }
+
+    .logo1 img{
+        height: 120px;
+    }
+
+    .banner video{
+        height: 60vh;
+    }
+}
+
+
+/* Small mobile */
+@media (max-width: 480px) {
+
+    header ul li a{
+        font-size: 0.8em;
+    }
+
+    .logo h5{
+        font-size: 1em;
+    }
+
+    .banner video{
+        height: 50vh;
+    }
+}
+
+
+
+.about{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 50px;
+}
+.right{
+    width: 100%;
+    height: 100%;
+}
+.right img{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: -12px -10px 24px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: -12px -10px 24px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -12px -10px 24px -7px rgba(0,0,0,0.75);
+}
+.right img:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+.left{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.left h3{
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.left p{
+    font-size: 1.2em;
+    text-align: justify;
+    text-align: center;
+}
+
+.left:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+.about .left button{
+ width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background: linear-gradient(rgba(128, 0, 128, 0.43),rgb(223, 193, 193));
+color: rgb(15, 15, 15);
+    text-transform: lowercase;
+    font-size: 1em;
+
+}
+.about .left button:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+
+/* =====================
+   ABOUT SECTION RESPONSIVE
+   ===================== */
+
+/* Tablet */
+@media (max-width: 992px){
+
+    .about{
+        height: auto;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .left h3{
+        font-size: 1.7em;
+    }
+
+    .left p{
+        font-size: 1.1em;
+    }
+
+    .right img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px){
+
+    .about{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .left, .right{
+        width: 100%;
+        height: auto;
+    }
+
+    .right img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .left h3{
+        font-size: 1.5em;
+    }
+
+    .left p{
+        font-size: 1em;
+    }
+
+    .about .left button{
+        width: 140px;
+        height: 38px;
+        font-size: 0.95em;
+    }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px){
+
+    .about{
+        padding: 15px;
+    }
+
+    .left h3{
+        font-size: 1.3em;
+    }
+
+    .left p{
+        font-size: 0.95em;
+    }
+
+    .about .left button{
+        width: 130px;
+        height: 36px;
+        font-size: 0.9em;
+    }
+}
+
+.mirror h4{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:2em;
+
+}
+.maincard{
+display: flex;
+justify-content: space-evenly;
+margin-top: 10px;
+gap: 20px;
+padding: 30px;
+}
+
+.card{
+    width: 380px;
+    height: 450px;
+    box-shadow: 0 0 18px #414040a8;
+    border-radius: 20px;
+    align-items: center;
+    gap: 15px;
+    border: solid purple;
+    padding: 10px;
+    
+    
+
+
+
+}
+.card h2{
+    color: #121212;
+    
+    
+    
+}
+.card img{
+    width: 300px;
+    height: 250px;
+    border-radius: 20px 20px 0px 0px;
+
+
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+.card button{
+    width: 150px;
+    height: 40px;
+    border-radius: 12px;
+    background: linear-gradient(rgba(128, 0, 128, 0.574),rgba(199, 168, 168, 0.791));
+color: rgb(40, 38, 38);
+    text-transform: uppercase;
+    font-size: 1em;
+
+}
+.card button:hover{
+    background-color: #161415;
+  
+
+}
+.products h4{
+     text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:2em;
+}
+.products{
+display: flex;
+justify-content: space-evenly;
+margin-top: 10px;
+ 
+padding: 10px;
+}
+.productcards{
+width: 300px;
+height: 300px;
+background: linear-gradient(rgba(128, 0, 128, 0.433),rgba(199, 168, 168, 0.591));
+box-shadow: 0 0 18px #414040a8;
+    border-radius: 20px;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: solid purple;
+    
+}
+.productcards:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+.productcards i{
+    font-size: 6em;
+    color: rgb(10, 9, 9);
+    padding-left: 80px;
+padding-top: 40px;
+}
+.productcards h5{
+text-align: center;
+margin-top: 10px;
+color: rgb(20, 19, 19);
+font-size: 1.5em;
+
+}
+.productcards button{
+ width: 150px;
+    height: 40px;
+    border-radius: 20px;
+ background: linear-gradient(rgba(128, 0, 128, 0.574),rgba(199, 168, 168, 0.791));
+color: rgb(27, 26, 26);
+    text-transform: lowercase;
+    font-size: 1em;
+
+    margin-left: 70px;
+    margin-top: 20px;
+    
+}
+.productcards button:hover{
+    background-color: #161415;
+  
+
+}
+
+.box{
+    width: 100%;
+    height: 45vh;
+    background: linear-gradient(purple,rgb(211, 178, 178));
+    margin-top: 20px;
+}
+.box h2{
+text-align: center;
+padding-top: 80px;
+font-size: 2em;
+color: rgb(15, 14, 14);
+}
+.box p{
+text-align: center;
+padding-top: 10px;
+color: rgb(8, 8, 8);
+font-size: 1.2em;
+}
+.box button{
+ width: 150px;
+ 
+    height: 40px;
+    border-radius: 12px;
+ background: linear-gradient(rgba(128, 0, 128, 0.183),rgba(199, 168, 168, 0.86));
+color: rgb(23, 22, 22);
+    text-transform: lowercase;
+    font-size: 1.5em;
+    padding-bottom: 10px ; 
+
+    margin-left: 700px;
+    margin-top: 20px;
+}
+.box button:hover{
+    background-color: #b2278f;
+
+}
+
+.review h5{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+}
+.review p{
+    text-align: center;
+    font-size: 1.2em;
+}
+.review i{
+     font-size: 2em;
+    color: rgb(245, 235, 235);
+    padding-left: 600px;
+padding-top: 20px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.icon i{
+        font-size: 2em;
+        color: rgb(12, 12, 12);
+}
+
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* Tablet */
+@media (max-width: 992px){
+
+    .maincard{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card{
+        width: 320px;
+        height: auto;
+    }
+
+    .card img{
+        width: 100%;
+        height: auto;
+    }
+
+    .products{
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .box{
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .box button{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .review i{
+        padding-left: 0;
+        text-align: center;
+        display: block;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px){
+
+    mirror h4,
+    .products h4{
+        font-size: 1.6em;
+    }
+
+    .maincard{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    .products{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productcards{
+        width: 90%;
+        height: auto;
+    }
+
+    .productcards i{
+        padding-left: 0;
+        text-align: center;
+        display: block;
+    }
+
+    .productcards button{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .box h2{
+        font-size: 1.6em;
+        padding-top: 50px;
+    }
+
+    .box p{
+        font-size: 1em;
+    }
+
+    .box button{
+        font-size: 1.1em;
+    }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px){
+
+    .card h2{
+        font-size: 1.2em;
+    }
+
+    .productcards h5{
+        font-size: 1.2em;
+    }
+
+    .box h2{
+        font-size: 1.4em;
+    }
+
+    .review h5{
+        font-size: 1.5em;
+    }
+
+    .review p{
+        font-size: 1em;
+    }
+
+    .icon{
+        flex-wrap: wrap;
+    }
+}
+
+
+.footer1{
+    background: linear-gradient(purple,rgb(219, 191, 191));
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.reflection{
+    color: aliceblue;
+   
+}
+.reflection p{
+  padding: 22px;
+   
+}
+
+.quick{
+    color: aliceblue;
+}
+.quick a{
+    color: aliceblue;
+}
+.quick ul li{
+    text-transform: capitalize;
+}
+.category{
+    color: aliceblue;
+}
+.category a{
+    color: aliceblue;
+}
+.category ul li{
+    text-transform: capitalize;
+}
+hr{
+    color: rgb(234, 149, 227);
+}
+.bottom-bar{
+    color: aliceblue;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+    width: 100%;
+    height: 100%;
+}
+.right img{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.right img:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+.left{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.left h3{
+    text-shadow: 18px 0px 20px #2f2828;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.left p{
+    font-size: 1.2em;
+    text-align: justify;
+    text-align: center;
+}
+.products h4{
+     text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:2em;
+    text-shadow: 0 0 18px #111101d7;
+}
+.products{
+display: flex;
+justify-content: space-evenly;
+margin-top: 10px;
+ 
+padding: 10px;
+}
+.productcards{
+width: 300px;
+height: 300px;
+box-shadow: 0 0 18px #414040a8;
+    border-radius: 20px;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+
+    
+}
+.productcards:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+.productcards i{
+    font-size: 4em;
+    color: rgb(10, 9, 9);
+    padding-left: 100px;
+padding-top: 40px;
+}
+.productcards h5{
+text-align: center;
+margin-top: 10px;
+text-shadow: 0 0 18px #000000a8;
+}
+.box{
+    width: 100%;
+    height: 400px;
+background:linear-gradient(rgba(128, 0, 128, 0.828),rgb(222, 184, 184));
+    padding: 50px;
+    
+
+}
+.maincard{
+display: flex;
+}
+.box h5{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-shadow: 0 0 18px #000000a8;
+}
+
+.visioncards{
+
+justify-content: space-evenly;
+margin-top: 10px;
+ 
+padding: 10px;
+}
+.p .visionwriting{
+    color: black;
+}
+.visioncards{
+width: 40%;
+height: 200px;
+box-shadow: 0 0 18px #414040a8;
+    border-radius: 20px;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+
+    
+}
+
+.visioncards:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+.review h5{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+    text-shadow: 0 0 18px #000000a8;
+}
+.review p{
+    text-align: center;
+    font-size: 1.2em;
+}
+.review i{
+     font-size: 2em;
+    color: rgb(10, 9, 9);
+    padding-left: 600px;
+padding-top: 20px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.icon i{
+        font-size: 2em;
+        color: rgb(10, 9, 9);
+}
+/* =========================
+   RESPONSIVE MEDIA QUERIES
+   ========================= */
+
+/* Tablet screens */
+@media (max-width: 992px){
+
+    .banner video{
+        height: 70vh;
+    }
+
+    .about{
+        height: auto;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .right img{
+        width: 100%;
+        height: auto;
+    }
+
+    .products{
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .productcards{
+        width: 260px;
+        height: auto;
+    }
+
+    .productcards i{
+        padding-left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .box{
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .maincard{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .visioncards{
+        width: 45%;
+        height: auto;
+    }
+
+    .review i{
+        padding-left: 0;
+        text-align: center;
+        display: block;
+    }
+}
+
+
+/* Mobile screens */
+@media (max-width: 768px){
+
+    .banner video{
+        height: 60vh;
+    }
+
+    .about{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .left, .right{
+        width: 100%;
+        height: auto;
+    }
+
+    .left h3{
+        font-size: 1.6em;
+    }
+
+    .left p{
+        font-size: 1em;
+    }
+
+    .products h4{
+        font-size: 1.6em;
+    }
+
+    .products{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productcards{
+        width: 90%;
+    }
+
+    .box h5{
+        font-size: 1.6em;
+    }
+
+    .visioncards{
+        width: 90%;
+    }
+
+    .review h5{
+        font-size: 1.6em;
+    }
+
+    .review p{
+        font-size: 1em;
+    }
+}
+
+
+/* Small mobile screens */
+@media (max-width: 480px){
+
+    .banner video{
+        height: 50vh;
+    }
+
+    .left h3{
+        font-size: 1.4em;
+    }
+
+    .products h4{
+        font-size: 1.4em;
+    }
+
+    .productcards i{
+        font-size: 3em;
+    }
+
+    .box{
+        padding: 30px 15px;
+    }
+
+    .icon{
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,37 @@
+.gallery{
+     background: linear-gradient(rgba(38, 37, 37, 0.441),rgba(128, 128, 128, 0.356)), url(assets/css/imgs/ChatGPT\ Image\ Jan\ 1\,\ 2026\,\ 02_39_56\ AM.png);
+ background-position: center;
+ background-size: cover;   
+ height: 90vh;
+}
+
+
+
+
+/* Mobile */
+@media (max-width: 768px){
+    .gallery{
+        height: 60vh;
+        background-position: center;
+    }
+}
+
+
+.h1{
+      font-size: 6em;
+    color: rgba(255, 255, 255, 0.76);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-transform: uppercase;
+    padding-top: 500px ;
+    padding-right: 600px;
+}
+
+.card1 img{
+    border-radius: 10%;
+}
+.gallery-img{
+  width: 80%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}

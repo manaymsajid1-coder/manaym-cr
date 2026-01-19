@@ -1,0 +1,73 @@
+.banner  {
+ background: linear-gradient(rgba(108, 94, 94, 0.507),rgba(128, 128, 128, 0.487)), url(assets/css/imgs/Dressing_Table_Mirror\ \(1\).jpg);
+ background-position: center;
+ background-size: cover;   
+ height: 90vh;
+}
+/* =========================
+   BANNER RESPONSIVE
+   ========================= */
+
+/* Tablet */
+@media (max-width: 992px){
+    .banner{
+        height: 70vh;
+        background-position: center top;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+    .banner{
+        height: 60vh;
+        background-position: center;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+    .banner{
+        height: 50vh;
+        background-position: center;
+    }
+}
+
+
+.h4{
+    font-size: 6em;
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    padding-top: 500px ;
+    padding-right: 500px;
+}
+.h4{
+    font-size: 6em;
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    padding-top: 500px ;
+    padding-right: 500px;
+}
+.C1{
+width: 350px;
+height: 420PX;
+}
+.cp{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 10px;
+}
+.hd{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    
+
+}
+.hd2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 60px;
+    text-transform: uppercase;
+    padding-top: 20px;
+
+}

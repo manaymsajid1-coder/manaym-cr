@@ -1,0 +1,161 @@
+*{
+
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+.banner  {
+ background: linear-gradient(rgba(108, 94, 94, 0.507),rgba(128, 128, 128, 0.487)), url(gallery/imgs/Make-up\ collection\ -\ Copy.jpg);
+ background-position: center;
+ background-size: cover;   
+ height: 90vh;
+}
+/* =========================
+   BANNER RESPONSIVE
+   ========================= */
+
+/* Tablet */
+@media (max-width: 992px){
+    .banner{
+        height: 70vh;
+        background-position: center top;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+    .banner{
+        height: 60vh;
+        background-position: center;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+    .banner{
+        height: 50vh;
+        background-position: center;
+    }
+}
+
+.banner h4{
+    color: rgba(255, 255, 255, 0.841);
+    text-transform: uppercase;
+    font-size: 5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    padding: 30%;
+    padding-left: 70px;
+}
+.contact{
+    width: 100%;
+    height: 450px;
+    padding-right: 20%;
+    display: flex;
+  
+    flex-direction: column;
+}
+.contact h1{
+    margin-top: 20px;
+    text-transform:uppercase;
+
+}
+.contact .cbox{
+    width: 550px;
+    height: 500px;
+      border: 2px solid black;
+      border-top-right-radius: 10%;
+      border-bottom-left-radius: 10%;
+    padding: 20px;
+    background: linear-gradient(rgba(128, 0, 128, 0.551),rgba(196, 155, 155, 0.709));
+}
+.contact .cbox input{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgb(236, 231, 231);
+}
+.contact .cbox input [type="submit"]{
+font-size: 20px;
+background: #848383;
+color: #000;
+}
+/* TABLET */
+@media (max-width: 992px) {
+
+  .contact {
+    height: auto;
+    padding-right: 0;
+    align-items: center;
+  }
+
+  .contact .cbox {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+
+  .contact h1 {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .contact .cbox {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .contact .cbox input {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+.a1{
+    width: 300px;
+    height: 100px;
+    border: 2px solid rgb(136, 132, 132);
+    padding: 20px;
+
+    
+}
+.b1{
+    border: 2px solid rgb(127, 125, 125);
+    width: 300px;
+    margin-left: 30px;
+    height: 100px;
+    padding: 20px;
+}
+.c1{
+     border: 2px solid rgb(127, 125, 125);
+    width: 300px;
+    margin-left: 30px;
+    height: 100px;
+    padding: 20px;
+}
+.d1{
+     border: 2px solid rgb(127, 125, 125);
+    width: 300px;
+    margin-left: 30px;
+    height: 100px;
+    padding: 20px;
+}
+.but{
+    color: rgb(60, 58, 58);
+    background-color: black;
+}
+.but:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+    background-color: black;
+}
+.geolocation{
+    height: 70vh;
+}

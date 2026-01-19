@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link rel="stylesheet" href="contact.html.css">
+<title>Clear Reflection</title>
+</head>
+<body>
+
+    
+      <header id="header">
+<script src="header.js"></script>
+  </header>
+
+
+ <div class="banner mt-2"  data-aos="zoom-in"
+   data-aos-duration="2000">
+<h4>contact us</h4>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 "  data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+ <div class="contact">
+  <h1>Get in touch with us</h1>
+  <div class="cbox">
+    <form>
+      <input type="Name" placeholder="text your name">
+      <input type="phone" placeholder="text your phone">
+      <input type="email" placeholder="text your email">
+      <input type="password" placeholder="text your password">
+     <input type="submit" class="but">
+    </form>
+
+  </div>
+  </div>
+  
+    
+    </div>
+    <div class="col-md-6">
+      <h1 class="text-center mt-5">Geolocation</h1>
+  <div id="map" class="map geolocation" style="height: 400px;"></div>
+</div>
+
+<!-- LEAFLET JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(function(position) {
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+
+    // Initialize map inside callback
+    var map = L.map('map').setView([lat, lon], 13);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    // Add marker
+    var marker = L.marker([lat, lon]).addTo(map)
+      .bindPopup("You are here!")
+      .openPopup();
+
+  }, function(error){
+    alert("Unable to retrieve your location. Please allow location access.");
+  });
+} else {
+  alert("Geolocation is not supported by this browser.");
+}
+</script>
+
+
+
+  
+  </div>
+   </div>
+
+
+<div class="container">
+  <div class="row mt-5 mb-5">
+    <div class="col-md-3 a1 text-center " data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+    <h6>Address</h6>
+<p>Aptech metro star gate karachi sindh</p>
+    </div>
+    <div class="col-md-3 b1 text-center " data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+      <h6>email</h6>
+      <p>conatct@clear reflection.com</p>
+    </div>
+    <div class="col-md-3 c1 text-center "
+    data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+      <h6>phone</h6>
+      <p>0332782920</p>
+    </div>
+    <div class="col-md-3 d1 text-center " data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+      <h6>follow us</h6>
+       <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-square-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-pinterest"></i>
+    </div>
+  </div>
+</div>
+
+
+
+ <div class="container-fluid">
+            <div class="row text-center footer1 pt-3 mt-3" id="footer">
+              <script src="footer.js"></script>
+              
+            </div>
+           
+
+         </div>
+
+
+
+ 
+
+
+
+
+
+
+   
+  
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
